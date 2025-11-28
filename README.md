@@ -24,12 +24,12 @@ The following is a simple implementation of a REST API with poor coding practice
 
 7. **Install Flask** by running:
    ```
-   pip install Flask
+   pip install -r requirements.txt
    ```
 
 8. **Install Flask-RESTful** with the following command:
    ```
-   pip install flask_restful
+   
    ```
 
 9. **Download Insomnia** from [Insomnia Website](https://insomnia.rest/download) or Postman
@@ -127,3 +127,4 @@ Certainly, here are the improved and corrected steps for your API endpoints:
          }
      }
      ```
+
