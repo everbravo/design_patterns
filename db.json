@@ -143,6 +143,12 @@
             "name": "lala",
             "category": "kids",
             "price": 9.0
+        },
+        {
+            "id": 24,
+            "name": "Laptop",
+            "category": "electronics",
+            "price": 999.99
         }
     ],
     "categories": [
@@ -163,5 +169,30 @@
             "name": "girls"
         }
     ],
-    "favorites": []
+    "favorites": [],
+    "carts": [
+        {
+            "user_id": 1,
+            "items": [
+                {
+                    "user_id": 1,
+                    "product_id": 1,
+                    "product_name": "T-Shirt",
+                    "product_price": 20.99,
+                    "quantity": 5,
+                    "added_at": "2025-12-04T21:40:42.549702",
+                    "total_price": 41.98
+                },
+                {
+                    "user_id": 1,
+                    "product_id": 2,
+                    "product_name": "Dress",
+                    "product_price": 45.99,
+                    "quantity": 1,
+                    "added_at": "2025-12-04T21:41:19.953890",
+                    "total_price": 45.99
+                }
+            ]
+        }
+    ]
 }

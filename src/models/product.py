@@ -26,9 +26,17 @@ class Product:
     
     @classmethod
     def from_dict(cls, data: dict) -> 'Product':
-        return cls(
-            id=data['id'],
-            name=data['name'],
-            category=data['category'],
-            price=data['price']
-        )
+        if not isinstance(data, dict):
+            raise TypeError("Data must be a dictionary")
+        
+        try:
+            return cls(
+                id=data['id'],
+                name=data['name'],
+                category=data['category'],
+                price=data['price']
+            )
+        except KeyError as e:
+            raise ValueError(f"Missing required field: {e}")
+        except (TypeError, ValueError) as e:
+            raise ValueError(f"Invalid data format: {e}")
