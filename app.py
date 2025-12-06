@@ -40,6 +40,15 @@ def create_app():
         resource_class_args=container.get('favorite_controller_args')
     )
     
+    api.add_resource(
+        container.get('cart_controller'),
+        '/cart',
+        '/cart/items',
+        '/cart/items/<int:product_id>',
+        '/cart/summary',
+        resource_class_args=container.get('cart_controller_args')
+    )
+    
     return app
 
 if __name__ == '__main__':
